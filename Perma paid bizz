@@ -49,7 +49,7 @@ for line in valid_lines:
         pass  # silently skip any error
 
 if not access_granted:
-    print(f"{Fore.RED}❌ Access Denied. Contact @YourSupport for paid access.")
+    print(f"{Fore.RED}❌ Access Denied. Contact @permapy for paid access.")
     sleep(2)
     os._exit(0)
 
@@ -181,7 +181,7 @@ def InfoAcc(username,gg):
 	else:email=f"{username}"
 	ss=f"""
 𝙏𝙤𝙤𝙡 𝙗𝙮 𝙥𝙚𝙧𝙢𝙖
-≿━━━━༺❀༻━━━━≾  
+꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂
 [👱🏻] Name ==> {full_name}  
 [👻] Username ==> @{username}  
 [💌] Email ==> {email}  
@@ -196,7 +196,7 @@ def InfoAcc(username,gg):
 [↩️] URL ==> https://www.instagram.com/{username}  
 [🍳] RESET ==> {reset_email}  
 
-≿━━━━༺❀༻━━━━≾  
+꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂
 TOOL BY @permapy @about_perma
 """;inline_keyboard=[[{'text':'Developer','url':'https://t.me/permapy'},{'text':'Join Channel','url':'https://t.me/about_perma'}]];payload={'chat_id':user_id,'text':ss,'reply_markup':json.dumps({'inline_keyboard':inline_keyboard})}
 	try:requests.post(f"https://api.telegram.org/bot{Token}/sendMessage",data=payload)
